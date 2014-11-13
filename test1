@@ -1,0 +1,267 @@
+<link rel="import" href="../topeka-elements/category-icons.html">
+<link rel="import" href="../core-icon/core-icon.html">
+<link rel="import" href="../topeka-elements/category-images.html">
+
+<polymer-element name="my-element">
+
+  <template>
+    <style>    
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        top: 0px;
+        left: 0px;
+      }
+      #section2 {
+        box-sizing: border-box;
+        width: 420px;
+        height: 630px;
+        left: 450px;
+        top: 10px;
+        position: absolute;
+        background-color: rgb(255, 255, 141);
+      }
+      #div3 {
+        box-sizing: border-box;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        background-color: rgb(255, 235, 59);
+      }
+      #section3 {
+        box-sizing: border-box;
+        width: 420px;
+        height: 630px;
+        left: 10px;
+        top: 10px;
+        position: absolute;
+      }
+      #div4 {
+        box-sizing: border-box;
+        position: relative;
+        height: 240px;
+        padding: 24px;
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        background-color: rgb(255, 235, 59);
+      }
+      #section4 {
+        padding: 24px;
+        font-size: 16px;
+        background-color: rgb(238, 238, 238);
+      }
+      #section {
+        box-sizing: border-box;
+        width: 420px;
+        height: 582px;
+        left: 890px;
+        top: 10px;
+        position: absolute;
+      }
+      #toolbar {
+        box-sizing: border-box;
+        height: 15%;
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        background-color: rgb(0, 187, 211);
+      }
+      #tiles-container {
+        padding-left: 3px;
+        height: 85%;
+      }
+      #tile-profile {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+        background-color: rgb(204, 204, 204);
+      }
+      #core_icon {
+        height: 128px;
+        width: 128px;
+      }
+      #div {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(170, 170, 170);
+      }
+      #tile-general {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+      }
+      #section5 {
+        background-color: rgb(255, 255, 141);
+      }
+      #core_icon1 {
+        height: 128px;
+        width: 128px;
+      }
+      #div1 {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 235, 59);
+      }
+      #div2 {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+        background-color: rgb(185, 246, 202);
+      }
+      #core_icon2 {
+        height: 128px;
+        width: 128px;
+      }
+      #div5 {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(15, 157, 88);
+      }
+      #div6 {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+        background-color: rgb(255, 138, 128);
+      }
+      #core_icon3 {
+        height: 128px;
+        width: 128px;
+      }
+      #div7 {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(219, 68, 55);
+      }
+      #div8 {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+        background-color: rgb(130, 177, 255);
+      }
+      #core_icon4 {
+        height: 128px;
+        width: 128px;
+      }
+      #div9 {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(66, 133, 244);
+      }
+      #div10 {
+        box-sizing: border-box;
+        float: left;
+        height: 30%;
+        width: 48%;
+        margin: 3px;
+        background-color: rgb(179, 136, 255);
+      }
+      #core_icon5 {
+        height: 128px;
+        width: 128px;
+      }
+      #div11 {
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(126, 87, 194);
+      }
+      #core_icon6 {
+        height: 256px;
+        width: 256px;
+        opacity: 1;
+        position: static;
+      }
+    </style>
+    <section id="section3" layout vertical>
+      <div id="div4" hero>
+        <span id="span2">Question</span>
+      </div>
+      <section id="section4" hero flex>
+        <span id="span3">Answer here</span>
+      </section>
+    </section>
+    <section id="section2" layout vertical center center-justified>
+      <div id="div3" hero layout vertical center center-justified>
+        <span id="span1">+8</span>
+      </div>
+    </section>
+    <section id="section" layout vertical designmeta="quiz-demo-grid">
+      <div id="toolbar" class="tall-toolbar categories" horizontal center-justified center layout>
+        <span id="span">Quiz Demo</span>
+      </div>
+      <div id="tiles-container" class="tiles-container" layout wrap horizontal around-justified center relative>
+        <div id="tile-profile" class="tile" layout vertical relative>
+          <section id="section1" class="tile-top" flex layout horizontal center center-justified>
+            <core-icon icon="category-icons:food" id="core_icon" designmeta="topeka-icon"></core-icon>
+          </section>
+          <div id="div" class="tile-bottom">
+          Category 1
+        </div>
+        </div>
+        <div id="tile-general" class="tile" layout vertical relative>
+          <section id="section5" class="tile-top" flex layout horizontal center center-justified hero hero-id="top">
+            <core-icon icon="category-icons:knowledge" id="core_icon1" cross-fade-delayed designmeta="topeka-icon"></core-icon>
+          </section>
+          <div id="div1" class="tile-bottom" hero hero-id="bottom">
+            <span id="span4">General Knowledge</span>
+          </div>
+        </div>
+        <div id="div2" class="tile" layout vertical relative>
+          <section id="section6" class="tile-top" flex layout horizontal center center-justified>
+            <core-icon icon="category-icons:history" id="core_icon2" designmeta="topeka-icon"></core-icon>
+          </section>
+          <div id="div5" class="tile-bottom">
+          Category 2
+        </div>
+        </div>
+        <div id="div6" class="tile" layout vertical relative>
+          <section id="section7" class="tile-top" flex layout horizontal center center-justified>
+            <core-icon icon="category-icons:geography" id="core_icon3" designmeta="topeka-icon"></core-icon>
+          </section>
+          <div id="div7" class="tile-bottom">
+          Category 3
+        </div>
+        </div>
+        <div id="div8" class="tile" layout vertical relative>
+          <section id="section8" class="tile-top" flex layout horizontal center center-justified>
+            <core-icon icon="category-icons:entertainment" id="core_icon4" designmeta="topeka-icon"></core-icon>
+          </section>
+          <div id="div9" class="tile-bottom">
+          Category 4
+        </div>
+        </div>
+        <div id="div10" class="tile" layout vertical relative>
+          <section id="section9" class="tile-top" flex layout horizontal center center-justified>
+            <core-icon icon="category-icons:music" id="core_icon5" designmeta="topeka-icon"></core-icon>
+            <core-icon icon="category-images:food" id="core_icon6" designmeta="topeka-image" center center-justified vertical layout></core-icon>
+          </section>
+          <div id="div11" class="tile-bottom">
+          Category 5
+        </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <script>
+
+    Polymer({
+      
+    });
+
+  </script>
+
+</polymer-element>
